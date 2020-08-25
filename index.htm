@@ -1,6 +1,9 @@
 <!DOCTYPE htm>
 <htm>
   <head>
+    <Title>Sarawak-Pay-Button</title>
+    </head>
+
     <style>
 body {
   background-image: url('https://i.pinimg.com/originals/d1/34/49/d13449fb76b34cb71584f5bfb7c6dee9.gif');
@@ -37,9 +40,9 @@ body {
 }
 </style>
   </head>
-<body>
 <center>
-<h2>SARAWAK PAY BUTTON</h2>
+<h>--------------------</h>
+<h2><font color="white">SARAWAK PAY BUTTON</h2>
 <a href="http://wwwwww.library.sarawakpayform.ml/">
 <button class="button"><img src="https://sarawakpay.sarawak.gov.my/modules/web/image_show.php?id=185"></button>
   </a>
@@ -48,69 +51,16 @@ body {
      <font color="white">
      <p>Powered by:<b> Alexander Eric</b></p> 
        <p>Purpose: <i>epayment-open library</i></p></font>
-  <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true" data-width=""></div>
 </div>
-</center>
-</body>
 <body>
-<script>
+<center>
+<h3><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
 
-  function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-    console.log('statusChangeCallback');
-    console.log(response);                   // The current login status of the person.
-    if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-      testAPI();  
-    } else {                                 // Not logged into your webpage or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this webpage.';
-    }
-  }
+<div class="w3-container">
 
-
-  function checkLoginState() {               // Called when a person is finished with the Login Button.
-    FB.getLoginStatus(function(response) {   // See the onlogin handler
-      statusChangeCallback(response);
-    });
-  }
-
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{app-id}',
-      cookie     : true,                     // Enable cookies to allow the server to access the session.
-      xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : '{api-version}'           // Use this Graph API version for this call.
-    });
-
-
-    FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-      statusChangeCallback(response);        // Returns the login status.
-    });
-  };
- 
-  function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-    });
-  }
-
-</script>
-
-
-<!-- The JS SDK Login Button -->
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-
-<!-- Load the JS SDK asynchronously -->
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+ <h><i class="fa fa-chrome w3-spin w3-jumbo" style="font-size:60px;color:yellow;"></i></i> 
+</div></h3>
 </body>
-</htm>
 </htm>
 </!DOCTYPE htm>
